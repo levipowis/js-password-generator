@@ -16,3 +16,19 @@ body {
   border-bottom: 2px solid #2F3E53;
   padding-bottom: 30px;
 }
+
+.output-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.output-box {
+  background-color: #273549;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #55F991;
+  width: 210px;
+  height: 40px;
+}
