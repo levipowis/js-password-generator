@@ -17,5 +17,12 @@ function generatePassword() {
 }
 
 // Function to add password to textContent of output elements
+function displayPasswords() {
+  let firstPassword = generatePassword();
+  let secondPassword = generatePassword();
+  console.log(firstPassword);
+  console.log(secondPassword);
+}
 
+displayPasswords();
 // Event listener for button
