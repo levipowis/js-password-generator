@@ -20,9 +20,9 @@ function generatePassword() {
 function displayPasswords() {
   let firstPassword = generatePassword();
   let secondPassword = generatePassword();
-  console.log(firstPassword);
-  console.log(secondPassword);
+  firstOutputEl.textContent = firstPassword;
+  secondOutputEl.textContent = secondPassword;
 }
 
-displayPasswords();
 // Event listener for button
+generateBtnEl.addEventListener("click", displayPasswords);
