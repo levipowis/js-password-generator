@@ -11,11 +11,11 @@ function generatePassword() {
   password = "";
   for (let i = 0; i < 16; i++) {
     randomIndex = Math.floor(Math.random() * characters.length);
-    return randomIndex;
+    password += characters[randomIndex];
   }
+  return password;
 }
 
-console.log(generatePassword());
 // Function to add password to textContent of output elements
 
 // Event listener for button
