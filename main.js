@@ -4,7 +4,18 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 // Variables for elements
 const firstOutputEl = document.getElementById("1st-output-el");
 const secondOutputEl = document.getElementById("2nd-output-el");
+const generateBtnEl = document.getElementById("generate-btn");
 
-// Function to generate random password and add to output
+// Function to generate random 15 character password
+function generatePassword() {
+  password = "";
+  for (let i = 0; i < 16; i++) {
+    randomIndex = Math.floor(Math.random() * characters.length);
+    return randomIndex;
+  }
+}
 
-// Event listeners for button
+console.log(generatePassword());
+// Function to add password to textContent of output elements
+
+// Event listener for button
